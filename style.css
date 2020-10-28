@@ -56,6 +56,7 @@ header {
 
 .header-right ul, .header-left ul {
     list-style-type: none;
+    display: inline-block;
 }
 
 .header-right ul li {
@@ -67,6 +68,50 @@ header {
     height: 50px;
     line-height: 50px;
     padding: 0 10px;
+}
+
+.dropdown-item {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 600px;
+    height: 400px;
+    background-color: lightblue;
+    padding: 10px;
+    display: none;
+    border: 1px solid grey;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-abbonamenti {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    display: none;
+    border: 1px solid grey;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.dropdown-abbonamenti.active {
+    display: block;
+}
+
+
+#conto li, #investimenti-e-risparmi li {
+    display: block;
 }
 
 main {
